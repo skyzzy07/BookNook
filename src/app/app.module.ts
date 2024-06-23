@@ -10,6 +10,9 @@ import { SliderComponent } from './home/slider/slider.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { CartComponent } from './components/cart/cart.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FeaturesComponent } from './home/features/features.component';
+import { LatestAdditionsComponent } from './home/latest-additions/latest-additions.component';
+import { BookCardComponent } from './components/book-card/book-card.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SliderComponent,
     AvatarComponent,
     CartComponent,
+    FeaturesComponent,
+    LatestAdditionsComponent,
+    BookCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
