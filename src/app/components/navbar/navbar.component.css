@@ -10,6 +10,9 @@
   width: 160px;
 }
 
+.categories-link {
+  text-decoration: none;
+}
 .categories-link:hover {
   font-weight: 600;
 }
