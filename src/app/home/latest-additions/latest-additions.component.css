@@ -9,8 +9,8 @@
 }
 
 .app-book-card {
+  width: 100%;
   min-width: 230px;
-  max-width: 280px;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
@@ -22,6 +22,7 @@
 @media (min-width: 768px) {
   .app-book-card {
     min-width: 0;
+    max-width: 280px;
     width: 100%;
   }
 }

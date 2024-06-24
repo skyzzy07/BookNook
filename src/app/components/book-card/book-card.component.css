@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  .book-card {
+    flex-direction: row;
+    max-height: 200px;
+  }
+
+  .book-card > img {
+    width: 35%;
+  }
+}

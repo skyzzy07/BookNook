@@ -18,8 +18,8 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li *ngIf="isCollapsed">
-          <a class="link-dark categories-link" routerLink="/categories"
-            >categories</a
+          <a class="link-dark categories-link" routerLink="/livres"
+            >Tous les livres</a
           >
         </li>
         <li *ngIf="!isCollapsed" class="categories-link nav-item dropdown">
@@ -33,25 +33,19 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" routerLink="/categories"
-                >All categories</a
-              >
+              <a class="dropdown-item" routerLink="/livres">Tous les livres</a>
             </li>
             <hr class="bg-secondary h-1 mt-0" />
             <li>
-              <a class="dropdown-item" routerLink="categories/thriller"
-                >Thriller</a
-              >
+              <a class="dropdown-item" routerLink="livres/thriller">Thriller</a>
             </li>
             <li>
-              <a class="dropdown-item" routerLink="categories/science-fiction"
+              <a class="dropdown-item" routerLink="livres/science-fiction"
                 >Science fiction</a
               >
             </li>
             <li>
-              <a class="dropdown-item" routerLink="categories/romance"
-                >Romance</a
-              >
+              <a class="dropdown-item" routerLink="livres/romance">Romance</a>
             </li>
           </ul>
         </li>
