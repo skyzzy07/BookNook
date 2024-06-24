@@ -1,1 +1,33 @@
-<p>livre works!</p>
+<section class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      <div class="book-cover">
+        <img src="/assets/téléchargement.jpeg" alt="book cover" />
+      </div>
+    </div>
+    <div class="col">
+      <div class="book-details">
+        <h2 class="text-warning">Book Title</h2>
+        <div class="text-secondary">categorie: Romans</div>
+        <br />
+        <span class="fw-bold">Description</span>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam
+          sed doloribus corporis quaerat impedit quo? Modi aut in placeat
+          assumenda. Excepturi perspiciatis suscipit, omnis dolor vel dolorem
+          porro ut, reprehenderit obcaecati aspernatur corporis, blanditiis
+          laboriosam id aperiam fugit voluptatum! A ab fugit cumque culpa, iste
+          architecto natus possimus unde.
+        </div>
+        <div>15 <span class="fw-bold">DT</span></div>
+      </div>
+      <button *ngIf="!isLoggedIn" class="btn btn-outline-secondary">
+        Log in
+      </button>
+      <button *ngIf="isLoggedIn" class="btn btn-lg btn-success">
+        Add to cart
+        <i class="fas fa-cart-shopping"></i>
+      </button>
+    </div>
+  </div>
+</section>

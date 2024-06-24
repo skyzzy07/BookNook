@@ -1,0 +1,24 @@
+.book-details {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.book-details > .description {
+  margin-bottom: 1rem;
+  max-height: 200px;
+  overflow: scroll;
+  color: var(--bs-gray-dark);
+}
+
+.book-cover {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.book-cover > img {
+  max-width: 500px;
+  width: 100%;
+}
