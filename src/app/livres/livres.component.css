@@ -1,0 +1,15 @@
+.grid-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-book-card {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .app-book-card {
+    max-width: 280px;
+  }
+}

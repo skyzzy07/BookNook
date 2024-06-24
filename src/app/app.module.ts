@@ -13,6 +13,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FeaturesComponent } from './home/features/features.component';
 import { LatestAdditionsComponent } from './home/latest-additions/latest-additions.component';
 import { BookCardComponent } from './components/book-card/book-card.component';
+import { RouterModule } from '@angular/router';
+import { LivresComponent } from './livres/livres.component';
+import { LivreComponent } from './livres/livre/livre.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,8 @@ import { BookCardComponent } from './components/book-card/book-card.component';
     FeaturesComponent,
     LatestAdditionsComponent,
     BookCardComponent,
+    LivresComponent,
+    LivreComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
