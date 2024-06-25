@@ -1,0 +1,16 @@
+.container {
+  padding: 35px; /* Adjust the padding as necessary */
+  margin: 0 auto; /* Center the container horizontally */
+  max-width: 400px; /* Optional: set a maximum width for the container */
+}
+.form-outline.mb-4 {
+  margin-bottom: 1rem; /* Adjust the bottom margin */
+  font-size: 0.875rem; /* Adjust the font size */
+  padding: 0.5rem; /* Adjust the padding */
+}
+
+/* Optionally, adjust the input fields within the form */
+.form-outline.mb-4 input {
+  height: 2rem; /* Adjust the height of input fields */
+  font-size: 0.875rem; /* Adjust the font size of input fields */
+}

@@ -1,5 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
+import { SignUpComponent } from '../sign-up/sign-up.component';
+import { SignInComponent } from '../sign-in/sign-in.component';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +11,13 @@ import { AuthService } from 'src/app/services/auth.service';
 export class NavbarComponent implements OnInit {
   isLoggedIn: boolean = false;
   isCollapsed: boolean = window.innerWidth < 992;
+  dialog: any;
   constructor(private authService: AuthService) {}
+  openSignUpDialog(): void {
+    this.dialog.open(SignUpComponent, {
+      width: '400px',
+    });
+  }
 
   ngOnInit() {
     this.authService.isLoggedIn.subscribe(
@@ -33,4 +41,23 @@ export class NavbarComponent implements OnInit {
   logout() {
     this.authService.logout();
   }
+}
+function openSignInDialog() {
+  throw new Error('Function not implemented.');
+}
+
+function ngOnInit() {
+  throw new Error('Function not implemented.');
+}
+
+function checkScreenWidth() {
+  throw new Error('Function not implemented.');
+}
+
+function login() {
+  throw new Error('Function not implemented.');
+}
+
+function logout() {
+  throw new Error('Function not implemented.');
 }

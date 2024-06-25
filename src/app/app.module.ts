@@ -16,6 +16,8 @@ import { BookCardComponent } from './components/book-card/book-card.component';
 import { RouterModule } from '@angular/router';
 import { LivresComponent } from './livres/livres.component';
 import { LivreComponent } from './livres/livre/livre.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { SignInComponent } from './components/sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { LivreComponent } from './livres/livre/livre.component';
     BookCardComponent,
     LivresComponent,
     LivreComponent,
+    SignUpComponent,
+    SignInComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
