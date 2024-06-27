@@ -42,22 +42,3 @@ export class NavbarComponent implements OnInit {
     this.authService.logout();
   }
 }
-function openSignInDialog() {
-  throw new Error('Function not implemented.');
-}
-
-function ngOnInit() {
-  throw new Error('Function not implemented.');
-}
-
-function checkScreenWidth() {
-  throw new Error('Function not implemented.');
-}
-
-function login() {
-  throw new Error('Function not implemented.');
-}
-
-function logout() {
-  throw new Error('Function not implemented.');
-}

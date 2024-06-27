@@ -1,0 +1,16 @@
+.dashboard {
+  display: flex;
+}
+
+.dashboard > .sidenav {
+  padding: 2rem;
+  background-color: var(--bs-gray-100);
+  border-right: 1px solid var(--bs-gray-200);
+  min-height: 100%;
+  flex-grow: 1;
+}
+
+.dashboard > .main {
+  padding: 2rem 4rem;
+  flex-grow: 2;
+}
