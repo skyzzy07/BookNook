@@ -1,7 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
-import { SignUpComponent } from '../sign-up/sign-up.component';
-import { SignInComponent } from '../sign-in/sign-in.component';
+import { SignUpComponent } from '../../sign-up/sign-up.component';
+import { SignInComponent } from '../../sign-in/sign-in.component';
 
 @Component({
   selector: 'app-navbar',

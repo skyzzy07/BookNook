@@ -16,10 +16,12 @@ import { BookCardComponent } from './components/book-card/book-card.component';
 import { RouterModule } from '@angular/router';
 import { LivresComponent } from './livres/livres.component';
 import { LivreComponent } from './livres/livre/livre.component';
-import { SignUpComponent } from './components/sign-up/sign-up.component';
-import { SignInComponent } from './components/sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 import { ProfileComponent } from './profile/profile.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SignInComponent,
     ProfileComponent,
     DashboardComponent,
+    AuthLayoutComponent,
+    MainLayoutComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
