@@ -18,6 +18,8 @@ import { LivresComponent } from './livres/livres.component';
 import { LivreComponent } from './livres/livre/livre.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
+import { ProfileComponent } from './profile/profile.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
     LivreComponent,
     SignUpComponent,
     SignInComponent,
+    ProfileComponent,
+    DashboardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
