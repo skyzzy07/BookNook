@@ -1,0 +1,27 @@
+.row-header {
+  font-weight: bold;
+  color: var(--bs-warning);
+  padding: 1rem 0;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--bs-gray-200);
+}
+
+.book-info {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.book-info > img {
+  max-width: 80px;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.actions > * {
+  cursor: pointer;
+}

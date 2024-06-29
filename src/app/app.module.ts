@@ -25,6 +25,7 @@ import { MainLayoutComponent } from './layouts/main-layout/main-layout.component
 import { CategoriesComponent } from './dashboard/categories/categories.component';
 import { UsersComponent } from './dashboard/users/users.component';
 import { SidenavComponent } from './dashboard/sidenav/sidenav.component';
+import { AddLivreComponent } from './dashboard/add-livre/add-livre.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { SidenavComponent } from './dashboard/sidenav/sidenav.component';
     CategoriesComponent,
     UsersComponent,
     SidenavComponent,
+    AddLivreComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
