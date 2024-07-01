@@ -1,0 +1,48 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.col {
+  flex: 1;
+  padding: 8px;
+}
+.col-entry {
+  display: flex;
+  align-items: center;
+}
+.header {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.avatar {
+  background-color: #6c757d;
+  color: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 8px;
+  text-align: center;
+}
+.actions i {
+  cursor: pointer;
+  margin-left: 8px;
+}
+.add-category {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    width: 100%;
+  }
+}
