@@ -4,7 +4,7 @@ export interface Livre {
   status: 'pending' | 'confirmed' | 'rejected';
   cover: string;
 }
-export const livres: Livre[] = [
+export const livres = [
   {
     cover: 'assets/téléchargement.jpeg',
     title: 'Atomic Habits',

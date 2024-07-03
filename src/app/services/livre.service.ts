@@ -8,8 +8,9 @@ import { Livre } from 'src/mock-data';
   providedIn: 'root',
 })
 export class LivreService {
-  constructor(private http: HttpClient, @Inject(baseUrl) public baseUrl: any) {}
-  getLivres(): Observable<Livre[]> {
-    return this.http.get<Livre[]>(`${this.baseUrl}/books`);
+  private apiUrl = baseUrl;
+  constructor(private http: HttpClient) {}
+  getLivres(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/books`);
   }
 }

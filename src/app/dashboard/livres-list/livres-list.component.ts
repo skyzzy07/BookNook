@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Livre, livres } from 'src/mock-data';
 import { EditLivreComponent } from './edit-livre/edit-livre.component';
 import { LivreService } from 'src/app/services/livre.service';
 
@@ -9,21 +8,23 @@ import { LivreService } from 'src/app/services/livre.service';
   styleUrls: ['./livres-list.component.css'],
 })
 export class LivresListComponent implements OnInit {
-  livres: Livre[] = livres;
+  public livres: any[] = [];
   @ViewChild(EditLivreComponent) editLivreModal;
 
   constructor(private livreService: LivreService) {}
   ngOnInit() {
-    this.livreService.getLivres().subscribe((livres) => (this.livres = livres));
+    this.livreService.getLivres().subscribe((livres) => {
+      console.log(livres[0]);
+      this.livres = livres;
+    });
   }
 
   openEditBookModal(livre) {
-    console.log('event emitted');
     this.editLivreModal.livre = {
       title: 'Edit Book',
-      code: livre.code,
+      id: livre.id,
       prix: livre.prix,
-      name: livre.title,
+      name: livre.name,
       auteur: livre.auteur,
       category: livre.category,
       description: livre.description,

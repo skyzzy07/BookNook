@@ -9,7 +9,7 @@ import { Livre } from 'src/mock-data';
 export class EditLivreComponent {
   @Input() livre = {
     title: 'Add book',
-    code: '',
+    id: '',
     prix: '',
     name: '',
     auteur: '',
