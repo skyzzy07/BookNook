@@ -6,7 +6,15 @@
           <th>Book info</th>
           <th>User</th>
           <th>Status</th>
-          <th>Actions</th>
+          <th>
+            Actions
+            <i
+              class="fas fa-plus-circle text-success add-book"
+              title="Add book"
+              data-bs-toggle="modal"
+              data-bs-target="#edit-livre-modal"
+            ></i>
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -47,4 +55,5 @@
       </tbody>
     </table>
   </div>
+  <app-edit-livre />
 </div>

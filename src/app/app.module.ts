@@ -26,6 +26,8 @@ import { CategoriesComponent } from './dashboard/categories/categories.component
 import { UsersComponent } from './dashboard/users/users.component';
 import { SidenavComponent } from './dashboard/sidenav/sidenav.component';
 import { AddLivreComponent } from './dashboard/add-livre/add-livre.component';
+import { EditCategoryComponent } from './dashboard/categories/edit-category/edit-category.component';
+import { EditLivreComponent } from './dashboard/add-livre/edit-livre/edit-livre.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,8 @@ import { AddLivreComponent } from './dashboard/add-livre/add-livre.component';
     UsersComponent,
     SidenavComponent,
     AddLivreComponent,
+    EditCategoryComponent,
+    EditLivreComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],

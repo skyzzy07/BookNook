@@ -25,3 +25,7 @@
 .actions > * {
   cursor: pointer;
 }
+
+.add-book {
+  cursor: pointer;
+}
