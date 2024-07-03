@@ -11,7 +11,7 @@ import { MainLayoutComponent } from './layouts/main-layout/main-layout.component
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UsersComponent } from './dashboard/users/users.component';
 import { CategoriesComponent } from './dashboard/categories/categories.component';
-import { AddLivreComponent } from './dashboard/add-livre/add-livre.component';
+import { LivresListComponent } from './dashboard/livres-list/livres-list.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -27,7 +27,7 @@ const routes: Routes = [
           { path: '', redirectTo: '/dashboard/users', pathMatch: 'full' },
           { path: 'users', component: UsersComponent },
           { path: 'categories', component: CategoriesComponent },
-          { path: 'livres', component: AddLivreComponent },
+          { path: 'livres', component: LivresListComponent },
         ],
       },
       { path: 'livres/:id', component: LivreComponent },

@@ -18,35 +18,33 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr *ngFor="let livre of livres">
           <td>
             <div>
-              <img src="/assets/téléchargement.jpeg" alt="book cover" />
-              Book title
+              <img src="{{ livre.cover }}" alt="book cover" />
+              {{ livre.title }}
             </div>
           </td>
-          <td>Youssri dali</td>
-          <td><span class="badge text-bg-warning text-white">Pending</span></td>
+          <td>{{ livre.user }}</td>
+          <td>
+            <span
+              class="badge text-white"
+              [ngClass]="{
+                'text-bg-warning': livre.status === 'pending',
+                'text-bg-success': livre.status === 'confirmed',
+                'text-bg-danger': livre.status === 'rejected'
+              }"
+              >{{ livre.status }}</span
+            >
+          </td>
           <td>
             <div class="actions">
-              <i class="text-warning fas fa-edit"></i>
-              <i class="text-danger fas fa-x"></i>
-              <i class="text-success fas fa-check"></i>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div>
-              <img src="/assets/téléchargement.jpeg" alt="book cover" />
-              Book title
-            </div>
-          </td>
-          <td>Ameni ben moussa</td>
-          <td><span class="badge text-bg-success">Confirmed</span></td>
-          <td>
-            <div class="actions">
-              <i class="text-warning fas fa-edit"></i>
+              <i
+                (click)="openEditBookModal(livre)"
+                class="text-warning fas fa-edit"
+                data-bs-target="#edit-livre-modal"
+                data-bs-toggle="modal"
+              ></i>
               <i class="text-danger fas fa-x"></i>
               <i class="text-success fas fa-check"></i>
             </div>

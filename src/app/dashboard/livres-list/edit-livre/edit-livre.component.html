@@ -1,0 +1,97 @@
+<div
+  class="modal fade"
+  id="edit-livre-modal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          {{ livre.title }}
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="form-group">
+            <label class="form-label" for="code">code</label>
+            <input
+              [value]="livre.code"
+              class="form-control"
+              type="text"
+              id="code"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input
+              [value]="livre.name"
+              class="form-control"
+              type="text"
+              id="name"
+            />
+          </div>
+          <div>
+            <label class="form-label" for="prix">Prix</label>
+            <input
+              [value]="livre.prix"
+              class="form-control"
+              min="0.1"
+              type="number"
+              id="prix"
+            />
+          </div>
+          <div>
+            <label class="form-label" for="auteur">Auteur</label>
+            <input
+              [value]="livre.auteur"
+              class="form-control"
+              type="text"
+              id="auteur"
+            />
+          </div>
+          <div>
+            <label class="form-label" for="category">Category</label>
+            <select
+              [value]="livre.category"
+              class="form-control"
+              name="category"
+              id="category"
+            >
+              <option value="romance">romance</option>
+              <option value="thriller">thriller</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label" for="description">Description</label>
+            <textarea
+              class="form-control"
+              name="description"
+              id="description"
+              [value]="livre.description"
+            ></textarea>
+          </div>
+          <div class="mt-2">
+            <input
+              class="form-control"
+              type="file"
+              name="book-cover"
+              placeholder="choisir un fichier"
+              id="book-cover"
+            />
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
